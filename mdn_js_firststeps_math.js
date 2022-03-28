@@ -55,8 +55,8 @@ console.log(10 > 20);          // greater than
 console.log(3 <= 2);           // less than or equal to
 console.log(5 >= 4);           // greater than or equal to
 
-const btn = document.querySelector('button');
-const txt = document.querySelector('p');
+let btn = document.querySelector('.btn1');
+let txt = document.querySelector('p');
 
 btn.addEventListener('click', updateBtn);
 
