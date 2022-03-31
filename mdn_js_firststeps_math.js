@@ -56,16 +56,16 @@ console.log(3 <= 2);           // less than or equal to
 console.log(5 >= 4);           // greater than or equal to
 
 let btn = document.querySelector('.btn1');
-let txt = document.querySelector('p');
+let txt_machine = document.querySelector('p');
 
 btn.addEventListener('click', updateBtn);
 
 function updateBtn() {
   if (btn.textContent === 'Start machine') {
     btn.textContent = 'Stop machine';
-    txt.textContent = 'The machine has started!';
+    txt_machine.textContent = 'The machine has started!';
   } else {
     btn.textContent = 'Start machine';
-    txt.textContent = 'The machine is stopped.';
+    txt_machine.textContent = 'The machine is stopped.';
   }
 }
