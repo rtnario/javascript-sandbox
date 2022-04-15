@@ -159,4 +159,3 @@ welcome = (age < 18) ?
   function() { console.log("Greetings!"); };
 
 welcome(); // ok now
-

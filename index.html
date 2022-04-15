@@ -58,5 +58,18 @@
         <script src="./mdn_js_client_side_web_apis_manipulate.js"></script>
         <script src="./top_foundations_fundamentals_part_3.js"></script>
         <script src="./javascript_dot_info_fxn_expressions.js"></script>
+        <script src="./javascript_dot_info_arrow_fxns_basics.js"></script>
+        <script>
+          let add7 = (num) => num + 7;
+          let multiply = (num1, num2) => num1 * num2;
+          let capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+          let lastLetter = (string) => string.charAt(string.length - 1);
+
+          console.log(add7(3));                 // 10
+          console.log(multiply(6, 4));          // 24
+          console.log(capitalize("eggnog"));    // "Eggnog"
+          console.log(lastLetter("eggnog"));    // "g"
+        </script>
+        <script src="./top_lessons_foundations_problem_solving.js"></script>
     </body>
 </html>
