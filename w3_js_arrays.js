@@ -43,7 +43,7 @@ console.log(person1[0]);            // "John"
 console.log(person2.firstName);     // "Jane"
 console.log(person2);
 
-// you can store anything in an array
+// you can store objects in an array
 myArray = [];
 myArray[0] = Date.now;
 myArray[1] = () => 2 + 2;
@@ -141,3 +141,8 @@ points1 = new Array(40, 100);           // creates array with 2 elements
 console.log(points1);
 points1 = new Array(40);                // creates empty array with size 40
 console.log(points1);
+
+// array recognition
+console.log(typeof points1);                // object only, JS arrays are objects
+console.log(Array.isArray(points1));        // true, ECMAScript 5/JS '09 isArray method
+console.log(points1 instanceof Array);      // true
