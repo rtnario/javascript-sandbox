@@ -3,31 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <title>JavaScript Sandbox</title>
+        <script src="./javascript_dot_info_variables.js" defer></script>
+        <script src="./w3_js_arithmetic.js" defer></script>
+        <script src="./w3_js_numbers.js" defer></script>
+        <script src="./mdn_js_firststeps_math.js" defer></script>
+        <script src="./javascript_dot_info_basic_math.js" defer></script>
+        <script src="./javascript_dot_info_datatypes.js" defer></script>
+        <script src="./mdn_strings_in_js.js" defer></script>
+        <script src="./w3_js_string_methods.js" defer></script>
+        <script src="./mdn_doc_string.js" defer></script>
+        <script src="./javascript_dot_info_comparisons.js" defer></script>
+        <script src="./w3_js_if_else.js" defer></script>
+        <script src="./javascript_dot_info_logical_operators.js" defer></script>
+        <script src="./mdn_js_bblocks_conditionals.js" defer></script>
+        <script src="./javascript_dot_info_ifelse.js" defer></script>
+        <script src="./digitalocean_switch_js.js" defer></script>
+        <script src="./mdn_js_bblocks_fxns.js" defer></script>
+        <script src="./mdn_js_client_side_web_apis_manipulate.js" defer></script>
+        <script src="./top_foundations_fundamentals_part_3.js" defer></script>
+        <script src="./javascript_dot_info_fxn_expressions.js" defer></script>
+        <script src="./javascript_dot_info_arrow_fxns_basics.js" defer></script>
+        <script src="./top_lessons_foundations_problem_solving.js" defer></script>
+        <script src="./w3_js_arrays.js" defer></script>
+        <script src="./w3_js_array_methods.js" defer></script>
+        <script src="./mdn_js_bblocks_looping.js" defer></script>
+        <script src="./javascript_dot_info_while_for.js" defer></script>
+        <script src="./top_lessons_foundations_dom_manip_events.js" defer></script>
     </head>
     <body>
         <script>
             // Your JavaScript goes here!
             console.log("Hello, World!")
         </script>
-        <script src="./javascript_dot_info_variables.js"></script>
-        <script src="./w3_js_arithmetic.js"></script>
-        <script src="./w3_js_numbers.js"></script>
 
         <button class="btn1">Start machine</button>
         <p>The machine is stopped.</p>
-
-        <script src="./mdn_js_firststeps_math.js"></script>
-        <script src="./javascript_dot_info_basic_math.js"></script>
-        <script src="./javascript_dot_info_datatypes.js"></script>
-
+     
         <button class="btn2" style="display: block; margin-bottom: 1em;">Press me</button>
-        <script src="./mdn_strings_in_js.js"></script>
-        <script src="./w3_js_string_methods.js"></script>
-        <script src="./mdn_doc_string.js"></script>
-        <script src="./javascript_dot_info_comparisons.js"></script>
-        <script src="./w3_js_if_else.js"></script>
-        <script src="./javascript_dot_info_logical_operators.js"></script>
-
+     
         <label for="weather">Select the weather type today: </label>
         <select id="weather">
             <option value="">--Make a choice--</option>
@@ -46,19 +59,10 @@
         </select>
         
         <h1>This is my website</h1>      
-        
-        <script src="./mdn_js_bblocks_conditionals.js"></script>
-        <script src="./javascript_dot_info_ifelse.js"></script>
-        <script src="./digitalocean_switch_js.js"></script>
-
+         
         <input id="textBox" type="text"></input>
         <div id="output"></div>
-        
-        <script src="./mdn_js_bblocks_fxns.js"></script>
-        <script src="./mdn_js_client_side_web_apis_manipulate.js"></script>
-        <script src="./top_foundations_fundamentals_part_3.js"></script>
-        <script src="./javascript_dot_info_fxn_expressions.js"></script>
-        <script src="./javascript_dot_info_arrow_fxns_basics.js"></script>
+            
         <script>
             let add7 = (num) => num + 7;
             let multiply = (num1, num2) => num1 * num2;
@@ -70,10 +74,7 @@
             console.log(capitalize("eggnog"));    // "Eggnog"
             console.log(lastLetter("eggnog"));    // "g"
         </script>
-        <script src="./top_lessons_foundations_problem_solving.js"></script>
-        <script src="./w3_js_arrays.js"></script>
-        <script src="./w3_js_array_methods.js"></script>
-
+        
         <br>
         <label for="search">Search by contact name: </label>
         <input id="search" type="text">
@@ -86,14 +87,24 @@
         
         <p id="outputForSquare">Output: </p>       
 
-        <script src="./mdn_js_bblocks_looping.js"></script>
-        <script src="./javascript_dot_info_while_for.js"></script>
-
         <div id="dom-container">
             <div class="dom-display"></div>
             <div class="dom-controls"></div>
         </div>
 
-        <script src="./top_lessons_foundations_dom_manip_events.js"></script>
+        <!-- <button style="margin: 10px 5px" id="dom-btn-1" onclick="alert('Hello World')">inline event</button> -->
+        <!-- <button style="margin: 10px 5px" id="dom-btn-2">external js to inline</button> -->
+        <!-- <button style="margin: 10px 5px" id="dom-btn-3">external js event listener</button> -->
+
+        <button style="margin: 10px 5px" id="dom-btn-1" onclick="alertFunction()">inline event</button>
+        <button style="margin: 10px 5px" id="dom-btn-2">external js to inline</button>
+        <button style="margin: 10px 5px" id="dom-btn-3">external js event listener</button>
+        <button style="margin: 10px 5px" id="dom-btn-4">e</button>
+
+        <div id="dom-container-2">
+            <button id="btn2-1" class="dom-btn-container-2">Click Me</button>
+            <button id="btn2-2" class="dom-btn-container-2">Click Me</button>
+            <button id="btn2-3" class="dom-btn-container-2">Click Me</button>
+        </div>
     </body>
 </html>
